@@ -11,15 +11,15 @@
             </div>
 
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="../index.php" class="nav-link px-2">Home</a></li>
-                <li><a href="#" class="nav-link px-2">Products</a></li>
-                <li><a href="#" class="nav-link px-2">FAQs</a></li>
-                <li><a href="#" class="nav-link px-2">About</a></li>
+                <li><a href="../index.php" class="nav-link px-2" style="color: gray;">Home</a></li>
+                <li><a href="../public/product.php" class="nav-link px-2" style="color: gray;">Products</a></li>
+                <li><a href="../public/faqs.php" class="nav-link px-2" style="color: gray;">FAQs</a></li>
+                <li><a href="../public/about.php" class="nav-link px-2" style="color: gray;">About</a></li>
             </ul>
 
             <div class="col-md-3 text-end">
-                <button type="button" class="btn btn-outline-primary me-2">Login</button>
-                <button type="button" class="btn btn-primary">Sign-up</button>
+                <button type="button" class="btn btn-outline-secondary me-2">Login</button>
+                <button type="button" class="btn btn-secondary" style="color: #FFD700;">Sign-up</button>
             </div>
         </header>
     </div>

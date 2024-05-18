@@ -2,4 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.main {
+    width: 100%;
+}
+
+.container>h1 {
+    font-weight: 800;
+    margin: 0 0 30px 0;
+}
+
+.imageClass>img {
+    width: 100%;
+}
+
+.textClass {
+    margin: 0 0 30px 0;
+}
+
+.textClass>h2 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin: 0 0 30px 0;
+}
+
+.textClass>button {
+    margin: 30px 0 0 0;
 }
