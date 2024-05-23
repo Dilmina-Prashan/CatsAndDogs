@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.col  h1 {
+    display: inline;
+}
+
+.col{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+.col>h1 {
+
+    font-family: century gothic;
+    font-size: 100px;
+}
+
+.col .head1 {
+
+    color: greenyellow;
+}
+
+.col .head2 {
+
+    color: orange;
+}
+
+.col .head3 {
+
+    color: violet;
+}
