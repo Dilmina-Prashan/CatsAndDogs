@@ -24,7 +24,6 @@
                 </figure>
             </div>
 
-
             <div class="col">
                 <h1>About <span class="us">Us</span></h1>
                 <p>Welcome to Cats & Dogs, the premier destination for pet lovers worldwide. Founded
@@ -34,7 +33,6 @@
                     owners can find everything they need under one virtual roof.
                 </p>
             </div>
-
 
             <div class="col">
                 <h1>What We <span class="do">Do</span> </h1>
