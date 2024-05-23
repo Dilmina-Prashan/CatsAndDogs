@@ -9,3 +9,8 @@
     background-color: #FFA62F;
     margin-top: 40px;
 }
+
+.itemButtons {
+    display: flex;
+    gap: 10px;
+}
