@@ -41,48 +41,17 @@
                 </ul>
             </div>
             <div class="productsGrid">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
+                <div class="container text-center">
+                    <div class="row row-cols-3">
+                        <div class="card col" style="width: 18rem;">
+                            <img src="../assets/Item 1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <a href="#" class="btn btn-outline-secondary">Add to cart</a>
-                                <a href="#" class="btn btn-warning">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a short card.</p>
-                                <a href="#" class="btn btn-outline-secondary">Add to cart</a>
-                                <a href="#" class="btn btn-warning">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-outline-secondary">Add to cart</a>
-                                <a href="#" class="btn btn-warning">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <a href="#" class="btn btn-outline-secondary">Add to cart</a>
-                                <a href="#" class="btn btn-warning">Buy Now</a>
+                                <h5 class="card-title">Kitten Toy for Indoor Cats</h5>
+                                <p class="card-text">LKR 6000</p>
+                                <div class="itemButtons">
+                                    <a href="#" class="btn btn-outline-secondary">Add To Cart</a>
+                                    <a href="#" class="btn btn-secondary">Buy Now</a>
+                                </div>
                             </div>
                         </div>
                     </div>
