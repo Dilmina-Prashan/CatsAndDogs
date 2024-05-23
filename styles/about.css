@@ -5,31 +5,34 @@
     font-family: "Montserrat", sans-serif;
 }
 
-.col  h1 {
+.col h1 {
     display: inline;
 }
 
-.col{
+.col {
+    text-align: start;
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
 }
-.col>h1 {
 
+.col>h1 {
     font-family: century gothic;
     font-size: 100px;
 }
 
-.col .head1 {
+.col>h1>span {
+    font-family: century gothic;
+    font-size: 100px;
+}
 
+.col .us {
     color: greenyellow;
 }
 
-.col .head2 {
-
+.col .do {
     color: orange;
 }
 
-.col .head3 {
-
+.col .values {
     color: violet;
 }
