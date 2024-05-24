@@ -42,7 +42,51 @@
             </div>
             <div class="productsGrid">
                 <div class="container text-center">
-                    <div class="row row-cols-3">
+                    <div class="row row-cols-3 gap">
+                        <div class="card col" style="width: 18rem;">
+                            <img src="../assets/Item 1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kitten Toy for Indoor Cats</h5>
+                                <p class="card-text">LKR 6000</p>
+                                <div class="itemButtons">
+                                    <a href="#" class="btn btn-outline-secondary">Add To Cart</a>
+                                    <a href="#" class="btn btn-secondary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col" style="width: 18rem;">
+                            <img src="../assets/Item 1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kitten Toy for Indoor Cats</h5>
+                                <p class="card-text">LKR 6000</p>
+                                <div class="itemButtons">
+                                    <a href="#" class="btn btn-outline-secondary">Add To Cart</a>
+                                    <a href="#" class="btn btn-secondary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col" style="width: 18rem;">
+                            <img src="../assets/Item 1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kitten Toy for Indoor Cats</h5>
+                                <p class="card-text">LKR 6000</p>
+                                <div class="itemButtons">
+                                    <a href="#" class="btn btn-outline-secondary">Add To Cart</a>
+                                    <a href="#" class="btn btn-secondary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col" style="width: 18rem;">
+                            <img src="../assets/Item 1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kitten Toy for Indoor Cats</h5>
+                                <p class="card-text">LKR 6000</p>
+                                <div class="itemButtons">
+                                    <a href="#" class="btn btn-outline-secondary">Add To Cart</a>
+                                    <a href="#" class="btn btn-secondary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card col" style="width: 18rem;">
                             <img src="../assets/Item 1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
