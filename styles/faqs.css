@@ -8,9 +8,10 @@
 .FaqHeading {
     background-color: tomato;
     color: white;
+    margin: 0;
 }
 
-.FaqHeading >h1{
+.FaqHeading>h1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,38 +20,55 @@
     font-size: 63px;
 }
 
-.Qcontainer {
-    margin-left: 6%;
-    margin-right: 6%;
-}
-
-.question h1{
-    color: red;
-    display: inline;
-    margin-left:1.5%;
-    font-size: 45px;
+.faq {
+    margin-top: 30px;
 }
 
 .question {
+    display: flex;
+    align-items: center;
     color: gray;
     background-color: whitesmoke;
     border-left: 5px solid red;
     font-size: 17px;
 }
 
-.answer h1 {
-    color: darkgray;
+.question p {
+    margin-bottom: 0;
+}
+
+.question span {
+    color: red;
     display: inline;
-    margin-left:1.5%;
+    margin-left: 1.5%;
     font-size: 45px;
 }
 
 .answer {
+    display: flex;
+    align-items: center;
     color: darkgray;
     border-left: 5px solid darkgray;
 }
+
+.answer p {
+    margin-bottom: 0;
+}
+
+.answer span {
+    color: darkgray;
+    display: inline;
+    margin-left: 1.5%;
+    font-size: 45px;
+}
+
 .ask {
     margin-left: 1%;
     margin-bottom: 1.5%;
     color: dimgray;
+}
+
+.button {
+    display: flex;
+    justify-content: end;
 }
