@@ -5,6 +5,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+.containerTop {
+    margin-top: 30px;
+}
+
 .col h1 {
     display: inline;
 }

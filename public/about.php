@@ -14,7 +14,7 @@
         <?php include '../components/navbar.php'; ?>
     </header>
 
-    <div class="container text-center">
+    <div class="container text-center containerTop">
 
         <div class="row row-cols-2">
 
