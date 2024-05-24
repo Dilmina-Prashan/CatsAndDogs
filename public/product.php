@@ -44,10 +44,21 @@
                 <div class="container text-center">
                     <div class="row row-cols-3 gap">
                         <div class="card col" style="width: 18rem;">
-                            <img src="../assets/Item 1.jpg" class="card-img-top" alt="...">
+                            <img src="../assets/catbed1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Kitten Toy for Indoor Cats</h5>
+                                <h5 class="card-title">Cats bed for indoor cats all seasons</h5>
                                 <p class="card-text">LKR 6000</p>
+                                <div class="itemButtons">
+                                    <a href="#" class="btn btn-outline-secondary">Add To Cart</a>
+                                    <a href="#" class="btn btn-secondary">View</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col" style="width: 18rem;">
+                            <img src="../assets/brush.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Self Cleaning Slicker Brush</h5>
+                                <p class="card-text">LKR 2500</p>
                                 <div class="itemButtons">
                                     <a href="#" class="btn btn-outline-secondary">Add To Cart</a>
                                     <a href="#" class="btn btn-secondary">Buy Now</a>
@@ -55,10 +66,10 @@
                             </div>
                         </div>
                         <div class="card col" style="width: 18rem;">
-                            <img src="../assets/Item 1.jpg" class="card-img-top" alt="...">
+                            <img src="../assets/catshampoo1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Kitten Toy for Indoor Cats</h5>
-                                <p class="card-text">LKR 6000</p>
+                                <h5 class="card-title">PetO’Cera All-in-one Cat Shampoo</h5>
+                                <p class="card-text">LKR 1500</p>
                                 <div class="itemButtons">
                                     <a href="#" class="btn btn-outline-secondary">Add To Cart</a>
                                     <a href="#" class="btn btn-secondary">Buy Now</a>
@@ -66,10 +77,10 @@
                             </div>
                         </div>
                         <div class="card col" style="width: 18rem;">
-                            <img src="../assets/Item 1.jpg" class="card-img-top" alt="...">
+                            <img src="../assets/dogbed1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Kitten Toy for Indoor Cats</h5>
-                                <p class="card-text">LKR 6000</p>
+                                <h5 class="card-title">Orthopedic Dog Beds for Medium Large Dogs</h5>
+                                <p class="card-text">LKR 7000</p>
                                 <div class="itemButtons">
                                     <a href="#" class="btn btn-outline-secondary">Add To Cart</a>
                                     <a href="#" class="btn btn-secondary">Buy Now</a>
@@ -77,24 +88,13 @@
                             </div>
                         </div>
                         <div class="card col" style="width: 18rem;">
-                            <img src="../assets/Item 1.jpg" class="card-img-top" alt="...">
+                            <img src="../assets/petshampoo1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Kitten Toy for Indoor Cats</h5>
-                                <p class="card-text">LKR 6000</p>
+                                <h5 class="card-title">Oatmeal Shampoo - Grooming for Dogs and Cats</h5>
+                                <p class="card-text">LKR 1300</p>
                                 <div class="itemButtons">
                                     <a href="#" class="btn btn-outline-secondary">Add To Cart</a>
-                                    <a href="#" class="btn btn-secondary">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card col" style="width: 18rem;">
-                            <img src="../assets/Item 1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Kitten Toy for Indoor Cats</h5>
-                                <p class="card-text">LKR 6000</p>
-                                <div class="itemButtons">
-                                    <a href="#" class="btn btn-outline-secondary">Add To Cart</a>
-                                    <a href="#" class="btn btn-secondary">Buy Now</a>
+                                    <a href="../public/viewpro.php" class="btn btn-secondary">View Product</a>
                                 </div>
                             </div>
                         </div>
