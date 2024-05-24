@@ -10,6 +10,10 @@
     margin-top: 40px;
 }
 
+.containerTop {
+    margin-top: 20px;
+}
+
 .itemButtons {
     display: flex;
     gap: 10px;

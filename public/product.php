@@ -41,7 +41,7 @@
                 </ul>
             </div>
             <div class="productsGrid">
-                <div class="container text-center">
+                <div class="container text-center containerTop">
                     <div class="row row-cols-3 gap">
                         <div class="card col" style="width: 18rem;">
                             <img src="../assets/catbed1.jpg" class="card-img-top" alt="...">
