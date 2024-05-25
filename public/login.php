@@ -15,10 +15,27 @@
             <div class="login">
                 <div class="row innerRow">
                     <div class="col image">
-                        One of three columns
+                        <img src="../assets/login.jpg" alt="ginger color cat">
                     </div>
                     <div class="col form">
-                        One of three columns
+                        <div class="formContainer">
+                            <h1>Login</h1>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <a href="" class="btn btn-primary">Login</a>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
