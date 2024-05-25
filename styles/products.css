@@ -22,3 +22,7 @@
 .gap {
     gap: 40px;
 }
+
+.card-img-top{
+    margin-top: 10px;
+}
