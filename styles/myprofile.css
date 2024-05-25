@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.imageClass {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding: 0 100px 0 100px !important;
+}
+
+.container .form-control {
+    background-color: lightgray;
+}
+
+.btn-grp {
+    width: 100%;
+    display: flex;
+}
+
+.samesize {
+    width: 50%;
+}
+
+.deletebtn {
+    display: flex;
+    justify-content: end;
+}
