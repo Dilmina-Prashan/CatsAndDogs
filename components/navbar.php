@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <body>
     <div class="container">
         <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
@@ -20,6 +21,7 @@
             <div class="col-md-3 text-end">
                 <a href="../public/login.php" class="btn btn-outline-secondary me-2">Login</a>
                 <a href="../public/signup.php" class="btn btn-secondary" style="color: #FFD700;">Signup</a>
+                <a href="" class="btn btn-secondary"><i class="bi bi-cart-fill"></i><span class="badge text-bg-secondary">0</span></a>
             </div>
         </header>
     </div>
