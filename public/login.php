@@ -14,6 +14,9 @@
     <section class="loginMain">
         <a href="../public/product.php" class="bacbutton"><i class="bi bi-arrow-left-circle"></i></a>
         <div class="container">
+            <div class="logo">
+                <a href="../index.php"><img src="../assets/cat-halloween-kitty-svgrepo-com.svg" alt="logo"></a>
+            </div>
             <div class="login">
                 <div class="row innerRow">
                     <div class="col image">
