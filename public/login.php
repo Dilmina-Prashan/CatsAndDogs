@@ -20,7 +20,7 @@
             <div class="login">
                 <div class="row innerRow">
                     <div class="col image">
-                        <img src="../assets/login.jpg" alt="ginger color cat">
+                        <img src="../assets/login.webp" alt="ginger color cat">
                     </div>
                     <div class="col form">
                         <div class="formContainer">
