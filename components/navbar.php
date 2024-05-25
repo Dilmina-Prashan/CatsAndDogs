@@ -21,7 +21,7 @@
             <div class="col-md-3 text-end">
                 <a href="../public/login.php" class="btn btn-outline-secondary me-2">Login</a>
                 <a href="../public/signup.php" class="btn btn-secondary" style="color: #FFD700;">Signup</a>
-                <a href="" class="btn btn-secondary"><i class="bi bi-cart-fill"></i><span class="badge text-bg-secondary">0</span></a>
+                <a href="../public/cart.php" class="btn btn-secondary"><i class="bi bi-cart-fill"></i><span class="badge text-bg-secondary">0</span></a>
             </div>
         </header>
     </div>

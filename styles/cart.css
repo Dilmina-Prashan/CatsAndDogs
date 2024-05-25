@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container>h1 {
+    font-family: century gothic;
+    font-size: 60px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.items {
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    border-bottom: 1px solid black;
+}
+
+.prices {
+    height: 500px;
+    border: 1px solid black;
+}
