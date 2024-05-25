@@ -18,8 +18,8 @@
             </ul>
 
             <div class="col-md-3 text-end">
-                <button type="button" class="btn btn-outline-secondary me-2">Login</button>
-                <button type="button" class="btn btn-secondary" style="color: #FFD700;">Sign-up</button>
+                <a href="../public/login.php" class="btn btn-outline-secondary me-2">Login</a>
+                <a href="../public/signup.php" class="btn btn-secondary" style="color: #FFD700;">Signup</a>
             </div>
         </header>
     </div>
