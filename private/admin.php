@@ -23,7 +23,7 @@
                         <hr>
                         <ul class="nav nav-pills flex-column mb-auto">
                             <li class="nav-item">
-                                <a href="#" class="nav-link active" aria-current="page">
+                                <a href="../private/blogs.php" class="nav-link active" aria-current="page">
                                     <img src="../assets/post-it-svgrepo-com.svg" width="16" height="16" alt="post">
                                     Blogs
                                 </a>
@@ -60,7 +60,10 @@
                     </div>
                 </div>
                 <div class="col-sm-9 viewport">
-                    <?php include '../private/blogs.php'; ?>
+                    <!-- <?php include '../private/blogs.php'; ?> -->
+                    <!-- <?php include '../private/oders.php'; ?> -->
+                    <!-- <?php include '../private/products.php'; ?> -->
+                    <?php include '../private/customers.php'; ?>
                 </div>
             </div>
         </div>
