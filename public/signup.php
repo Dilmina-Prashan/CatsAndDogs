@@ -1,3 +1,7 @@
+<?php
+include '../database/signup_action.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,8 +28,8 @@
                     </div>
                     <div class="col form">
                         <div class="formContainer">
-                            <h1>Signup</h1>
-                            <form>
+                            <h1>Sign Up</h1>
+                            <form action="signup_action.php" method="POST">
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Email address</label>
                                     <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -43,7 +47,7 @@
                                     <label class="form-check-label" for="exampleCheck1">Remember Me</label>
                                 </div>
                                 <div class="d-grid gap-2">
-                                    <a href="" class="btn btn-dark btn-sm">Signup</a>
+                                    <button class="btn btn-dark btn-sm" type="submit">Signup</button>
                                     <a href="../public/login.php" class="btn btn-outline-dark btn-sm">Login</a>
                                 </div>
                             </form>
