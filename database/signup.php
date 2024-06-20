@@ -19,8 +19,8 @@ if (isset($_POST['submit'])) {
                 header("Location: ../public/login.php");
             }
         }
-    }else{
-        if($count_emai>0){
+    } else {
+        if ($count_emai > 0) {
             echo '<script>
                 window.location.href="myprofile.php";
                 alert("Email already exists");
