@@ -1,23 +1,34 @@
 <?php
 include '../database/connection.php';
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if(isset($_POST['signup'])){
     $email = $_POST['email'];
     $password = $_POST['password'];
     $cpassword = $_POST['cpassword'];
 
-    if ($password == $cpassword) {
-        $sql = "INSERT INTO user (email, password, cpassword) VALUES (?, ?, ?)";
-        $stmt = $conn->prepare($sql);
-        $stmt->bind_param("ss", $email, $password, $cpassword);
-        if ($stmt->execute()) {
-            echo "Signup successful. <a href='login.php'>Login here</a>";
-        } else {
-            echo "Error: " . $stmt->error;
-        }
-        $stmt->close();
-        $stmt->close();
-    } else {
-        echo "email or password incorrect";
+    if($password !== $cpassword){
+        die('Password do not match.');
     }
+
+    $hashPassword = password_hash($password, PASSWORD_BCRYPT);
+
+    $stmt=$conn->prepare('SELECT id FROM user WHERE = ?');
+    $stmt->bind_param('s', $email);
+    $stmt->execute();
+    $stmt->store_result();
+
+    if($stmt->num_rows > 0){
+        echo 'Email already exists.';
+    }
+
+    $stmt = $conn->prepare('INSERT INTO user (email, passworrd) VALUES (?, ?)');
+    $stmt->bind_param('ss', $email, $hashPassword);
+
+    if ($stmt->execute()){
+        header('Location: login.php');
+    }else{
+        echo 'Error: ' .$stmt->error;
+    }
+    $stmt->close();
+    $conn->close();
 }

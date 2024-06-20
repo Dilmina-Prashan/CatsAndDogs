@@ -29,7 +29,7 @@ include '../database/signup_action.php';
                     <div class="col form">
                         <div class="formContainer">
                             <h1>Sign Up</h1>
-                            <form action="signup_action.php" method="POST">
+                            <form action="../database/signup_action.php" method="POST">
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Email address</label>
                                     <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp">
