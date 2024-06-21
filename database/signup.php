@@ -13,7 +13,7 @@ if (isset($_POST['submit'])) {
     if ($count_emai == 0) {
         if ($password == $cpassword) {
             $hash = password_hash($password, PASSWORD_DEFAULT);
-            $sql = "INSERT INTO user(email, password) VALUES ('$emai,$hash')";
+            echo $sql = "INSERT INTO user(email, password) VALUES ('$email,$pass')"; 
             $result = mysqli_query($conn, $sql);
             if ($result) {
                 header("Location: ../public/login.php");
