@@ -1,5 +1,6 @@
 <?php
 include("../database/connection.php");
+include("../database/signup.php");
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +30,7 @@ include("../database/connection.php");
                     <div class="col form">
                         <div class="formContainer">
                             <h1>Sign Up</h1>
-                            <form action="../database/signup.php" method="POST">
+                            <form action="signup.php" method="POST">
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Email address</label>
                                     <input type="email" name="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" required>
