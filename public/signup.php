@@ -30,7 +30,7 @@ include("../database/signup.php");
                     <div class="col form">
                         <div class="formContainer">
                             <h1>Sign Up</h1>
-                            <form action="signup.php" method="POST">
+                            <form action="<?=htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post">
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Email address</label>
                                     <input type="email" name="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" required>
