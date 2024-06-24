@@ -1,6 +1,5 @@
 <?php
-include("../database/connection.php");
-include("../database/signup.php");
+include '../database/connection.php';
 ?>
 
 <!DOCTYPE html>
@@ -30,18 +29,45 @@ include("../database/signup.php");
                     <div class="col form">
                         <div class="formContainer">
                             <h1>Sign Up</h1>
-                            <form action="<?=htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post">
+                            <?php
+                            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                                extract($_POST);
+                                $email = dataClean($email);
+                                $password = dataClean($password);
+                                $cpassword = dataClean($cpassword);
+
+                                $message = array();
+                                if ($password == $cpassword) {
+                                    if (empty($message)) {
+                                        $hash = password_hash($password, PASSWORD_DEFAULT);
+                                        $db = dbConn();
+                                        $sql = "INSERT INTO user(`email`, `password`) VALUES('$email','$hash')";
+                                        $db->query($sql);
+                                        $user_id = $db->insert_id;
+                                    }
+                                }
+                            }
+
+                            function dataClean($data = null)
+                            {
+                                $data = trim($data);
+                                $data = stripslashes($data);
+                                $data = htmlspecialchars($data);
+                                return $data;
+                            }
+                            ?>
+                            <form action="<?= htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                    <input type="email" name="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                    <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label">Password</label>
-                                    <input type="password" name="pass" class="form-control form-control-sm" id="exampleInputPassword1" required>
+                                    <input type="password" class="form-control form-control-sm" id="exampleInputPassword1" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-                                    <input type="password" name="cpass" class="form-control form-control-sm" id="exampleInputPassword1" required>
+                                    <input type="password" class="form-control form-control-sm" id="exampleInputPassword2">
                                 </div>
                                 <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1">

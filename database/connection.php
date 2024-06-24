@@ -1,24 +1,17 @@
 <?php
 function dbConn()
 {
-    $servername = "localhost";
+    $server = "localhost";
     $username = "root";
     $password = "";
-    $db_name = "catsanddogs_db";
+    $db = "catsanddogs_db";
     $port = 3306;
 
-    $conn = new mysqli($servername, $username, $password, $db_name, $port);
+    $conn = new mysqli($server, $username, $password, $db, $port);
+
     if ($conn->connect_error) {
-        die("Connation Faild " . $conn->connect_error);
+        die("Database Error : " . $conn->connect_error);
     } else {
         return $conn;
     }
-}
-
-function dataClean($data = null){
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-
-    return $data;
 }
