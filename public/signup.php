@@ -31,6 +31,37 @@ include '../database/connection.php';
                         <div class="formContainer">
                             <h1>Sign Up</h1>
                             <?php
+                            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                                extract($_POST);
+                                $email = dataClean($email);
+                                $password = dataClean($password);
+                                $cpassword = dataClean($cpassword);
+
+                                $message = array();
+
+                                if ($password == $cpassword) {
+                                    if (empty($message)) {
+                                        $hash = password_hash($password, PASSWORD_DEFAULT);
+                                        $db = dbConn();
+                                        $sql = "INSERT INTO user(`email`, `password`) VALUES('$email','$hash')";
+                                        $db->query($sql);
+                                        $user_id = $db->insert_id;
+
+                                        header('Location: login.php');
+                                        exit;
+                                    }
+                                } else {
+                                    $message[] = "Password do not match";
+                                }
+                            }
+                            function dataClean($data = null)
+                            {
+                                $data = trim($data);
+                                $data = stripslashes($data);
+                                $data = htmlspecialchars($data);
+
+                                return $data;
+                            }
                             ?>
                             <form action="<?= htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
                                 <div class="mb-3">
