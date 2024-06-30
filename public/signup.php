@@ -11,6 +11,7 @@ include '../database/connection.php';
     <link rel="stylesheet" href="../styles/signup.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="../assets/cat-halloween-kitty-svgrepo-com.svg">
     <title>Signup</title>
 </head>
 
@@ -30,44 +31,19 @@ include '../database/connection.php';
                         <div class="formContainer">
                             <h1>Sign Up</h1>
                             <?php
-                            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-                                extract($_POST);
-                                $email = dataClean($email);
-                                $password = dataClean($password);
-                                $cpassword = dataClean($cpassword);
-
-                                $message = array();
-                                if ($password == $cpassword) {
-                                    if (empty($message)) {
-                                        $hash = password_hash($password, PASSWORD_DEFAULT);
-                                        $db = dbConn();
-                                        $sql = "INSERT INTO user(`email`, `password`) VALUES('$email','$hash')";
-                                        $db->query($sql);
-                                        $user_id = $db->insert_id;
-                                    }
-                                }
-                            }
-
-                            function dataClean($data = null)
-                            {
-                                $data = trim($data);
-                                $data = stripslashes($data);
-                                $data = htmlspecialchars($data);
-                                return $data;
-                            }
                             ?>
                             <form action="<?= htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                    <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                    <input type="email" name="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label">Password</label>
-                                    <input type="password" class="form-control form-control-sm" id="exampleInputPassword1" required>
+                                    <input type="password" name="password" class="form-control form-control-sm" id="exampleInputPassword1" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-                                    <input type="password" class="form-control form-control-sm" id="exampleInputPassword2">
+                                    <input type="password" name="cpassword" class="form-control form-control-sm" id="exampleInputPassword2" required>
                                 </div>
                                 <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
