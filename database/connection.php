@@ -3,7 +3,7 @@ function dbConn()
 {
     $server = "localhost";
     $username = "root";
-    $password = "";
+    $password = "root";
     $db = "catsanddogs_db";
     $port = 3306;
 

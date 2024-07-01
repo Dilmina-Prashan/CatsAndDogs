@@ -1,5 +1,9 @@
 <?php
+// Start output buffering
+ob_start();
 include '../database/connection.php';
+
+// Rest of the PHP code for signup
 ?>
 
 <!DOCTYPE html>
@@ -43,11 +47,13 @@ include '../database/connection.php';
                                     if (empty($message)) {
                                         $hash = password_hash($password, PASSWORD_DEFAULT);
                                         $db = dbConn();
-                                        $sql = "INSERT INTO user(`email`, `password`) VALUES('$email','$hash')";
+                                        $sql = "INSERT INTO user(email, password) VALUES('$email','$hash')";
                                         $db->query($sql);
                                         $user_id = $db->insert_id;
 
                                         header('Location: login.php');
+                                        // End the output buffering and send the output
+                                        ob_end_flush();
                                         exit;
                                     }
                                 } else {
